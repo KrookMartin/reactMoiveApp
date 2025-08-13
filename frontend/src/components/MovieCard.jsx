@@ -4,9 +4,9 @@ function MovieCard({movie}){
     alert("clicked")
     }
     return <div className="movie-card">
-        <div className="moive-poster">
+        <div className="movie-poster">
             <img src={movie.url} alt={movie.title} />
-            <div className="moive-overlay"> 
+            <div className="movie-overlay"> 
                 <button className="favorite-btn" onClick={onFavoriteClick}>
                     ♥
                 </button>
@@ -18,3 +18,4 @@ function MovieCard({movie}){
         </div>
     </div>
 }
+export default MovieCard
